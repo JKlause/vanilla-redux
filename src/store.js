@@ -26,9 +26,9 @@ export const StoreProvider = ({ reducer, initialState, children }) => {
 
 StoreProvider.propTypes = {
   reducer: PropTypes.function,
-  initialState: PropTypes.string,
+  initialState: PropTypes.object,
   children: PropTypes.node
-}
+};
 
 export const useStoreState = () => useContext(StoreContext).state;
 export const useDispatch = () => useContext(StoreContext).dispatch;
