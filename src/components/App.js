@@ -9,9 +9,9 @@ export default function App() {
   return (
     <>
       <input type="number" value={state.count} onChange={({ target }) => dispatch({ type: 'set', payload: +target.value })}/>
-      <button onClick={() => dispatch({ type: 'decrement'})}>- {state.count}</button>
-      <button onClick={() => dispatch({ type: 'increment'})}>+ {state.count}</button>
-      <button onClick={() => dispatch({ type: 'reset'})}>Reset</button>
+      <button onClick={() => dispatch({ type: 'decrement' })}>- {state.count}</button>
+      <button onClick={() => dispatch({ type: 'increment' })}>+ {state.count}</button>
+      <button onClick={() => dispatch({ type: 'reset' })}>Reset</button>
 
       <Article />
     </>
